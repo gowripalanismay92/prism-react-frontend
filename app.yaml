@@ -1,0 +1,23 @@
+command:
+  - uvicorn
+  - app:app
+  - --host
+  - 0.0.0.0
+  - --port
+  - "8000"
+
+env:
+  - name: "ENTRA_TENANT_ID"
+    value: "2e6d25d7-db22-4877-951a-1bb6ad5352c5"
+  - name: "PRISM_API_AUDIENCE"
+    value: "api://085f3f55-ec95-498a-8eff-13a3b26522b7"
+  - name: "CORE_APP_ORIGIN"
+    value: "http://localhost:5173"
+  - name: "GRAPH_CLIENT_ID"
+    value: "422b51a8-0aff-45c2-abf8-da1ee4f157d6"
+  - name: "GRAPH_CLIENT_SECRET"
+    valueFrom: "secret"
+  - name: "BOB_BACKEND_URL"
+    value: "https://prism-advisor-fastapi-backend-7405612943934018.18.azure.databricksapps.com"
+  - name: "DATABRICKS_HOST"
+    value: "https://adb-7405612943934018.18.azuredatabricks.net"

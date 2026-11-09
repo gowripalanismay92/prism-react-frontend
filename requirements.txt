@@ -1,0 +1,5 @@
+fastapi==0.124.4
+uvicorn[standard]==0.38.0
+msal>=1.31.0
+requests>=2.32.0
+databricks-sdk>=0.70.0
